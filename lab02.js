@@ -12,10 +12,11 @@ while (name !== 'mohammad') {
 
 let foodtype = prompt('do i like healthy food ? yes or no'.toLowerCase())
 
-if (foodtype == 'yes'||'y'){
+if (foodtype == ('yes')){
 
     alert ("no i don't ")
-}else if(foodtype == 'no'||'n') {
+}
+else if(foodtype == ('no')) {
 
 alert ("that's right"  )
 }
@@ -29,12 +30,41 @@ alert ("that's right"  )
 
 let status = prompt('do i am single or married ? '.toLowerCase())
 
-if (status == 'single'||'s'){
+if (status == 'single'){
 
     alert ("yes i am  ")
-}else if(status == 'married'||'m') {
+}else if(status == ('married')||('m')) {
 
 alert ("no i don't "  )
+}
+
+
+
+let age = prompt('How old am I ? '.toLowerCase())
+
+if (age == 24 ){
+
+    alert (" yes ")
+}else if(age !== 24) {
+
+alert ("no i don't "  )}
+    
+
+
+
+
+
+
+
+
+let masaf = prompt('do i like mansaf yes or no ? '.toLowerCase())
+
+if (masaf === 'no'){
+
+    alert (" no of course i like it  ")
+}else if(masaf === ('yes')) {
+
+alert ("of course "  )
 }
 
 
@@ -45,6 +75,12 @@ alert ("no i don't "  )
 
 
 
+let sport = prompt('do i like sport yes or no ? '.toLowerCase())
 
+if (status === 'yes'){
 
+    alert ("yes i am  ")
+}else if(status === ('no')) {
 
+alert ("no i like it "  )
+}

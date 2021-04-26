@@ -1,3 +1,7 @@
+
+let username =prompt('please enter your name ')
+alert ('welcom '+ username);
+
 let name = prompt('please enter my first name').toLowerCase();
 console.log(name)
 
@@ -16,11 +20,20 @@ if (foodtype == ('yes')){
 
     alert ("no i don't ")
 }
+
+else if (foodtype == ('y')){
+
+    alert ("no i don't ")}
+
 else if(foodtype == ('no')) {
 
 alert ("that's right"  )
 }
 
+else if(foodtype == ('n')) {
+
+    alert ("that's right"  )
+    }
 
 
 
@@ -28,12 +41,13 @@ alert ("that's right"  )
 
 
 
-let status = prompt('do i am single or married ? '.toLowerCase())
+
+let status = prompt('AM I single or married ? '.toLowerCase())
 
 if (status == 'single'){
 
     alert ("yes i am  ")
-}else if(status == ('married')||('m')) {
+}else if(status == ('married')) {
 
 alert ("no i don't "  )
 }
@@ -59,10 +73,20 @@ alert ("no i don't "  )}
 
 let masaf = prompt('do i like mansaf yes or no ? '.toLowerCase())
 
-if (masaf === 'no'){
+if (masaf === ('no')){
 
     alert (" no of course i like it  ")
-}else if(masaf === ('yes')) {
+}
+else if (masaf == ('n')){
+
+    alert (" no of course i like it  ")
+}
+else if(masaf == ('yes')) {
+
+alert ("of course "  )
+}
+
+else if(masaf == ('yes')) {
 
 alert ("of course "  )
 }
@@ -74,13 +98,30 @@ alert ("of course "  )
 
 
 
-
 let sport = prompt('do i like sport yes or no ? '.toLowerCase())
 
-if (status === 'yes'){
+if (sport === 'yes'){
 
     alert ("yes i am  ")
-}else if(status === ('no')) {
+}
+
+else if (sport == 'y'){
+
+    alert ("yes i am  ")
+}
+
+
+else if(sport === ('no')) {
 
 alert ("no i like it "  )
 }
+
+else if(sport == ('n')) {
+
+    alert ("no i like it "  )
+    }
+
+
+
+
+    alert ('goodbay '+ username);

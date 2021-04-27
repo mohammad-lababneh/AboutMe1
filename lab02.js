@@ -125,3 +125,71 @@
 
 
 //     alert ('goodbay '+ username);
+
+
+
+
+// let myAge=Number(prompt("guess my age"));
+// for(let i=0;i<4;i++){
+// if (myAge==24) { alert("correct")
+// break;
+
+// }else if (i == 3 ){
+//     alert ('the correct answer is 24')
+// break;
+// }
+
+// else if (myAge<24) {
+//     alert("too low");
+//      myAge=Number(prompt("guess my age"));
+
+
+// } else if (myAge>24){ 
+//     alert("too high");       
+// myAge=Number(prompt("guess my age"));
+
+// }
+
+// console.log (i)
+// }
+
+  
+
+
+let s =0
+
+
+let film = ['frinds', 'breaking bad', 'viking', 'preason break'];
+let ask = prompt("what is my fav film ?");
+for (let i = 1; i < 7; i++) {
+    if (film.includes(ask)) {
+        alert('yes this is one of them')
+     s = s + 1
+        
+
+        break;
+
+    } 
+
+    else {
+        alert('sorry it is not one of them')
+        ask = prompt("what is my fav film");
+        
+
+    }
+
+
+}    alert('the correct answers are:  ' + '  frinds  '+ '  breaking bad '+ '  viking '+ '  preason break ');
+
+alert("YOUR SCORE IS =" + s)
+
+
+
+
+
+
+
+
+
+
+

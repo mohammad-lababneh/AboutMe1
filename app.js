@@ -1,42 +1,45 @@
 'use strict'
 let score = 0;
-let username =prompt('please enter your name ')
-alert ('welcom '+ username);
+let username = prompt('please enter your name ')
+
+alert('welcome ' + username);
 
 let name = prompt('please enter my first name').toLowerCase();
-console.log(name)
 
+function f1() {
+    
 
 if (name == 'mohammad') {
-alert ('thats true ');
-score++;
-       } 
+    alert('thats true ');
+    score++;
+}
+}
+f1(name);
 
 
+let foodtype = prompt('Do i like healthy food ? yes or no'.toLowerCase())
+function f2(){
+if (foodtype == ('yes')) {
 
-
-let foodtype = prompt('do i like healthy food ? yes or no'.toLowerCase())
-
-if (foodtype == ('yes')){
-
-    alert ("no i don't ")
+    alert("wrong, i don't ")
 }
 
-else if (foodtype == ('y')){
+else if (foodtype == ('y')) {
 
-    alert ("no i don't ")}
-
-else if(foodtype == ('no')) {
-    score++;
-alert ("that's right"  )
+    alert("wrong, i don't ")
 }
 
-else if(foodtype == ('n')) {
+else if (foodtype == ('no')) {
     score++;
-    alert ("that's right"  )
-    }
+    alert("that's right")
+}
 
-
+else if (foodtype == ('n')) {
+    score++;
+    alert("that's right")
+}
+}
+f2(foodtype);
 
 
 
@@ -44,28 +47,28 @@ else if(foodtype == ('n')) {
 
 
 let status = prompt('AM I single or married ? '.toLowerCase())
-
-if (status == 'single'){
+function f3(){
+if (status == 'single') {
     score++;
-    alert ("yes i am  ")
-}else if(status == ('married')) {
+    alert("yes correct  ")
+} else if (status == ('married')) {
 
-alert ("no i don't "  )
+    alert("no im not ")
 }
-
-
+}
+f3(status);
 
 let age = prompt('How old am I ? '.toLowerCase())
-
-if (age == 24 ){
+function f4(){
+if (age == 24) {
     score++;
-    alert (" yes ")
-}else if(age !== 24) {
+    alert(" yes ")
+} else if (age !== 24) {
 
-alert ("no i don't "  )}
-
-
-
+    alert("no i don't ")
+}
+}
+f4(age);
 
 
 
@@ -73,26 +76,26 @@ alert ("no i don't "  )}
 
 
 let masaf = prompt('do i like mansaf yes or no ? '.toLowerCase())
+function f5(){
+if (masaf === ('no')) {
 
-if (masaf === ('no')){
-    
-    alert (" no of course i like it  ")
+    alert(" no of course i like it  ")
 }
-else if (masaf == ('n')){
+else if (masaf == ('n')) {
 
-    alert (" no of course i like it  ")
+    alert(" no of course i like it  ")
 }
-else if(masaf == ('yes')) {
+else if (masaf == ('yes')) {
     score++;
-alert ("of course "  )
+    alert("of course!!! ")
 }
 
-else if(masaf == ('y')) {
+else if (masaf == ('y')) {
     score++;
-alert ("of course "  )
+    alert("of course!!! ")
 }
-
-
+}
+f5(masaf);
 
 
 
@@ -100,77 +103,69 @@ alert ("of course "  )
 
 
 let sport = prompt('do i like sport yes or no ? '.toLowerCase())
-
-if (sport === 'yes'){
+function f6(){
+if (sport === 'yes') {
     score++;
-    alert ("yes i am  ")
+    alert("yes, correct ")
 }
 
-else if (sport == 'y'){
+else if (sport == 'y') {
     score++;
-    alert ("yes i am  ")
+    alert("yes, correct ")
 }
 
 
-else if(sport === ('no')) {
+else if (sport === ('no')) {
 
-alert ("no i like it "  )
+    alert("no i love sports ")
 }
 
-else if(sport == ('n')) {
+else if (sport == ('n')) {
 
-    alert ("no i like it "  )
+    alert("no i love sports ")
+}
+}
+f6(sport);
+
+
+
+
+
+
+let myAge = Number(prompt("guess my age"));
+function f7(){
+for (let i = 0; i < 4; i++) {
+    if (myAge == 24) {
+        alert("correct")
+        score++;
+        break;
+
+    } else if (i == 3) {
+        alert('the correct answer is 24')
+        break;
     }
 
+    else if (myAge < 24) {
+        alert("too low");
+        myAge = Number(prompt("guess my age"));
 
 
+    } else if (myAge > 24) {
+        alert("too high");
+        myAge = Number(prompt("guess my age"));
 
-    alert ('goodbay '+ username);
+    }
 
-
-
-
-let myAge=Number(prompt("guess my age"));
-for(let i=0;i<4;i++){
-if (myAge==24) { alert("correct")
-score++;
-break;
-
-}else if (i == 3 ){
-    alert ('the correct answer is 24')
-break;
+    console.log(i)
 }
-
-else if (myAge<24) {
-    alert("too low");
-     myAge=Number(prompt("guess my age"));
-
-
-} else if (myAge>24){ 
-    alert("too high");       
-myAge=Number(prompt("guess my age"));
-
 }
-
-console.log (i)
-}
-
-
-
-
-
-
-
-
-
-
-
-
+f7(myAge);
 
 
 
 let Q7 = ['freinds', 'prison break', 'vikings', 'the walking dead',];
-let A7 = prompt("what is my film ?");
+let A7 = prompt("what are my fav series ?");
+function f8(){
 let flag = false;
 for (let a = 1; a < 6; a++) {
     for (let i = 0; i < Q7.length; i++) {
@@ -181,22 +176,26 @@ for (let a = 1; a < 6; a++) {
             break;
         }
     }
+    
     if (flag == true) {
         break;
     }
     if (flag === false) {
         alert('sorry it is not one of them')
-     
-       A7 = prompt("what is my fav film ?");
+
+        A7 = prompt("what are my fav series ?");
 
 
 
-   
+
     }
+}}
+f8(A7);
 
 
-    
 
-}
-alert (score + 'out of 8');
-alert ('the right answers are :'+ ' prison break ' + ' freinds '+ ' vikings '+ ' the walking dead ' );
+
+alert('the right answers are :' + ' prison break ' + ' freinds ' + ' vikings ' + ' the walking dead ');
+alert(score + 'out of 8');
+alert('goodbye ' + username);
+

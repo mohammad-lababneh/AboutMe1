@@ -15,7 +15,7 @@ function f1() {
     if (myname == 'mohammad') {
 
         alert('thats true ');
-       
+
         score++;
     }
 
@@ -42,13 +42,13 @@ function f2() {
     else if (foodtype == ('no')) {
         score++;
         alert("that's right")
-       
+
     }
 
     else if (foodtype == ('n')) {
         score++;
         alert("that's right")
-        
+
     }
 
 
@@ -70,7 +70,7 @@ function f3() {
     if (status == 'single') {
         score++;
         alert("yes correct  ")
-      
+
 
     } else if (status == ('married')) {
 
@@ -93,7 +93,7 @@ function f4() {
     if (age == 24) {
         score++;
         alert(" yes ")
-        
+
 
     } else if (age !== 24) {
 
@@ -123,7 +123,7 @@ function f5() {
     else if (masaf == ('yes')) {
         score++;
 
-        
+
 
         alert("of course!!! ");
     }
@@ -131,7 +131,7 @@ function f5() {
     else if (masaf == ('y')) {
         score++;
 
-        
+
         alert("of course!!! ");
     }
 }
@@ -148,14 +148,14 @@ function f6() {
     if (sport === 'yes') {
         score++;
         alert("yes, correct ");
-        
+
 
     }
 
     else if (sport === 'y') {
         score++;
         alert("yes i am  ");
-        
+
 
         alert("yes, correct ");
     }
@@ -183,7 +183,7 @@ let myAge = Number(prompt("guess my age"));
 function f7() {
     for (let i = 0; i < 4; i++) {
         if (myAge == 24) {
-            
+
 
             alert("correct")
             score++;
@@ -205,7 +205,7 @@ function f7() {
 
         }
 
-        
+
     }
 }
 f7(myAge);
@@ -219,7 +219,7 @@ function f8() {
     for (let a = 1; a < 6; a++) {
         for (let i = 0; i < Q7.length; i++) {
             if (A7 === Q7[i]) {
-                
+
 
                 alert('yes this is one of them')
                 flag = true;

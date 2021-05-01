@@ -70,6 +70,8 @@ function f3() {
     if (status == 'single') {
         score++;
         alert("yes correct  ")
+        console.log('thats true ');
+
     } else if (status == ('married')) {
 
         alert("no im not ")
@@ -91,6 +93,8 @@ function f4() {
     if (age == 24) {
         score++;
         alert(" yes ")
+        console.log('thats true ');
+
     } else if (age !== 24) {
 
         alert("no i don't ")
@@ -144,6 +148,8 @@ function f6() {
     if (sport === 'yes') {
         score++;
         alert("yes, correct ");
+        console.log('thats true ');
+
     }
 
     else if (sport === 'y') {
@@ -177,6 +183,8 @@ let myAge = Number(prompt("guess my age"));
 function f7() {
     for (let i = 0; i < 4; i++) {
         if (myAge == 24) {
+            console.log('thats true ');
+
             alert("correct")
             score++;
             break;
@@ -211,6 +219,8 @@ function f8() {
     for (let a = 1; a < 6; a++) {
         for (let i = 0; i < Q7.length; i++) {
             if (A7 === Q7[i]) {
+                console.log('thats true ');
+
                 alert('yes this is one of them')
                 flag = true;
                 score = score + 1;
